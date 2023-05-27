@@ -1,0 +1,26 @@
+class Box {
+    int l;
+    int b;
+
+    Box(int l, int b) // Parameterised Constructor Name-Same as class name(Box)
+    {
+        this.l = l; //Using this keyword on same name of both local and formal parameters
+        this.b = b;
+    }
+
+    int Volume() // Method Name-Volume
+    {
+        return l * b;
+    }
+}
+
+public class A2_this_keyword {
+    public static void main(String[] args) {
+        Box bx; // Automatically constructor called before new operator complete and value
+                // intialised
+        bx = new Box(20, 10);
+
+        int Vol = bx.Volume();
+        System.out.println(Vol);
+    }
+}
