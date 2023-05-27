@@ -1,0 +1,28 @@
+//Here we can not see much of effect on this keyword but when formal and local parameters are same then this keyword is much usefull
+
+class Box {
+    int l;
+    int b;
+
+    Box(int length, int breadth) // Parameterised Constructor Name-Same as class name(Box)
+    {
+        this.l = length; //Using this keyword on different name of local and formal parameters
+        this.b = breadth;
+    }
+
+    int Volume() // Method Name-Volume
+    {
+        return l * b;
+    }
+}
+
+public class A1_this_keyword {
+    public static void main(String[] args) {
+        Box bx; // Automatically constructor called before new operator complete and value
+                // intialised
+        bx = new Box(20, 10);
+
+        int Vol = bx.Volume();
+        System.out.println(Vol);
+    }
+}
