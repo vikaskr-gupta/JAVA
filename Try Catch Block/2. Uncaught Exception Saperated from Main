@@ -1,0 +1,21 @@
+// UNCAUGHT EXCEPTION IN A METHOD SAPERATED FORM MAIN BLOCK 
+
+public class A2_Uncaught_Exception_1 
+{
+    static void subroutine()
+    {
+        int d = 0;
+        int a = 10 / d; // EXCEPTION OCCUR
+        System.out.println(a);
+    }
+    public static void main(String[] args)
+    {
+        A2_Uncaught_Exception_1.subroutine();
+
+        //SHOWING ERROR!!!
+
+        // java.lang.ArithmeticException: / by zero
+        // at B2_Uncaught_Exception_1.subroutine(B2_Uncaught_Exception_1.java:8)
+        // at B2_Uncaught_Exception_1.main(B2_Uncaught_Exception_1.java:13)
+    }
+}
