@@ -1,3 +1,3 @@
 # JAVA
-Here, I am uploading my java code from Basics and I also studing with reference to Book.
+Here, I am uploading my java codes from Basics and I also takes reference from Book and online-sites.
 Writter Name is "Herbert Schildt".
